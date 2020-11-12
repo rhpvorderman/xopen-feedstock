@@ -10,7 +10,7 @@ source:
   sha256: 2fd9f537d96c6fb2f0bfed2c5ea133d8961dcef0baa3d8c388cb8bea2af5b090
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,6 +23,7 @@ requirements:
   run:
     - bz2file   # [py27]
     - python
+    - isa-l
 
 test:
   imports:
